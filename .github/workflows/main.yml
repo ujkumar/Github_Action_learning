@@ -1,4 +1,4 @@
-name: "This is the first Action file."
+name: This is the first Action file.
 
 on:
   push:
@@ -6,8 +6,11 @@ on:
       - main
 
 jobs:
-  labels-issue:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      name: "Runing echo command."
-      run: echo "THIS IS TEST FILLE"
+      - name: Get Code.
+        uses: actions/checkout@v3
+      - name: Run echo command.
+        run: echo "This is testing......."
+
