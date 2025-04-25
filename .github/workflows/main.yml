@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       name: "Runing echo command."
-      run: ECHO "THIS IS TEST FILLE"
+      run: echo "THIS IS TEST FILLE"
